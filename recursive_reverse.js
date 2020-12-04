@@ -7,6 +7,7 @@ const readline = require('readline').createInterface({
     array = array.replace(/[\,\"\'\[\]]+/g,"").split("")
     reverse(array, 0, array.length-1)
     console.log(array)
+    readline.close()
   })
 
 function reverse(array, start, end) {
