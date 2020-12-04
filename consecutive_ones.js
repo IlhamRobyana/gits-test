@@ -4,7 +4,7 @@ const readline = require('readline').createInterface({
   })
 
   readline.question(`Enter the binary array\n`, (array) => {
-    array = array.replace(/[\,]+/g,"")
+    array = array.replace(/[\,\[\]]+/g,"")
     var sliceArray = array.split("0")
     sliceArray.sort(function(a, b) {
         return b.length - a.length
